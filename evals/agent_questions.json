@@ -1,0 +1,27 @@
+[
+  {
+    "question": "统计8月2日平均上游水位。",
+    "expected_tools": ["get_statistics"]
+  },
+  {
+    "question": "分析8月2日上游水位变化。",
+    "expected_tools": ["analyze_trend"]
+  },
+  {
+    "question": "检测异常水位。",
+    "expected_tools": ["detect_anomalies"]
+  },
+  {
+    "question": "分析闸门开度和上下游水位之间的关系。",
+    "expected_tools": ["calculate_correlation"]
+  },
+  {
+    "question": "根据运行规程说明需要关注哪些指标。",
+    "expected_tools": ["retrieve_knowledge"]
+  },
+  {
+    "question": "生成一份运行情况日报。",
+    "expected_tools": ["generate_operation_report"]
+  }
+]
+

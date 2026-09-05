@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.streamlit/secrets.toml
+data/uploads/
+data/vector_store/
+data/Sample2.csv
+.run/
+.DS_Store

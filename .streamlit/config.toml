@@ -1,0 +1,16 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+# Demo 数据和知识文档按需读取，不需要开发期文件热监控。
+# 关闭 watcher 可减少 Windows/Anaconda 环境中的后台资源占用。
+# 浏览器由项目启动器统一打开，避免 Streamlit 再自动打开一次。
+address = "localhost"
+port = 8501
+headless = true
+fileWatcherType = "none"
+runOnSave = false
+
+[logger]
+# 隐藏 Streamlit 自身的欢迎/推广提示，不影响应用日志。
+hideWelcomeMessage = true
