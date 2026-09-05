@@ -266,9 +266,26 @@ pytest
 
 测试覆盖数据加载、日期筛选、描述统计、五个预设异常的检出、相关性、闸门变化、文档切分、RAG 检索、离线路由和 mock LLM Tool 调用，不会消耗真实 API 额度。评测问题保存在 `evals/agent_questions.json`。
 
-## 截图位置
+## 项目截图
 
-截图清单和占位说明位于 `docs/screenshots/README.md`。建议至少展示数据大屏、Tool 执行轨迹、RAG 引用和日报四张图。
+### 数据概览与时序可视化
+
+![Hydro Agent 数据概览与时序可视化](docs/screenshots/dashboard-overview.png)
+
+### Agent 工具调用与异常检测
+
+![Hydro Agent 工具调用过程](docs/screenshots/agent-tool-trace.png)
+
+### RAG 检索与来源引用
+
+![Hydro Agent RAG 来源引用](docs/screenshots/rag-citations.png)
+
+<details>
+<summary><strong>展开查看完整页面与自动运行日报</strong></summary>
+
+![Hydro Agent 自动运行日报](docs/screenshots/operation-report.png)
+
+</details>
 
 ## 当前局限性
 
