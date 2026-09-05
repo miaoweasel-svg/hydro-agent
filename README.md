@@ -300,19 +300,3 @@ pytest
 1. 为 OpenAI embedding 增加本地缓存，并接入 FAISS/Chroma 持久化索引；
 2. 增加基于滑动窗口的多变量异常解释与调整前后对比；
 3. 建立结构化 Agent 评测集，记录工具选择准确率、参数正确率和引用完整率。
-
-## 面试讲解建议
-
-建议重点理解以下代码：
-
-- `src/hydro_agent/agent/orchestrator.py`：为什么 LLM 只编排、不计算；
-- `src/hydro_agent/agent/registry.py`：七个工具如何用严格 JSON Schema 暴露；
-- `src/hydro_agent/analysis/anomalies.py`：Z-score/IQR/rolling 的假设与局限；
-- `src/hydro_agent/rag/`：来源元数据如何从解析一直保留到引用；
-- `tests/test_agent.py`：如何 mock Provider，验证工具链而不调用真实 API。
-
-可以用一句话概括架构：**模型负责“决定算什么”，Python 负责“怎么算”，RAG 负责“依据来自哪里”，界面负责“让过程看得见”。**
-
-## 简历项目描述（可直接调整）
-
-> 独立设计并实现水利工程运行数据智能分析 Agent：基于 Python/Pandas 构建统计、趋势、相关性、闸门变化与可解释异常检测工具，通过 OpenAI Responses API Function Calling 完成多工具编排；实现支持 PDF/TXT/Markdown 的轻量 RAG 与来源引用，并使用 Streamlit/Plotly 搭建可视化交互界面。构造 14 天 synthetic 时序数据与可复现异常样本，使用 pytest 覆盖核心分析、检索和 mock Agent 调用；系统严格限定为分析演示，不接入真实基础设施控制。
